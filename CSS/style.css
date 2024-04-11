@@ -1,0 +1,182 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+h1, h2, h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+.container {
+    max-width: 800px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Overlay styles */
+  .image-container {
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .overlay .row {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5%;
+  }
+  
+  .overlay h1,
+  .overlay p,
+  .overlay form {
+    color: #fff;
+  }
+  
+  .overlay form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  
+  /* Contact Us section styles */
+  .contact-us {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  /* Course section styles */
+  .container .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container .row .col-md-6 {
+    flex-basis: calc(50% - 20px);
+    margin-right: 20px;
+  }
+  
+  .container .row .col-md-6:last-child {
+    margin-right: 0;
+  }
+  
+  /* Additional styles */
+  h3 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+.container .row .col-md-6 {
+  flex-basis: calc(33.33% - 20px); /* Change flex-basis to 33.33% to make the columns equal */
+  margin-right: 20px;
+  margin-bottom: 20px; /* Add margin-bottom to create space between the rows */
+}
+
+.container .row .col-md-6:last-child {
+  margin-right: 0;
+}
+.image-container2 {
+    background-color: #f2f2f2;
+    border: none;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex; /* Add display:flex */
+    flex-direction: column; /* Add flex-direction:column */
+    justify-content: center; /* Add justify-content:center */
+  }
+
+.image-container2 img {
+  max-width: 100%;
+  height: auto;
+  flex-grow: 1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the columns horizontally */
+}
+
+.course-section {
+  background-color: #f2f2f2; /* Add background color to create a common background */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}  
+
+  
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Roboto", Arial, sans-serif;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: "Open Sans", Arial, sans-serif;
+  }
+  @media (max-width: 767px) {
+    .image-container {
+      height: 200px;
+    }
+    .overlay {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .course-section .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .image-container2 {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .image-container2 img {
+      margin-bottom: 20px;
+    }
+    .email-form {
+      margin-top: 20px;
+    }
+    .course-section h3 {
+      margin-top: 40px; /* Add margin-top to create space between the heading and the courses */
+    }
+  }
+  .social-media {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .social-link {
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px; /* Add a fixed width to ensure all icons are of equal size */
+    height: 50px; /* Add a fixed height to ensure all icons are of equal size */
+    line-height: 50px; /* Center the icon vertically within the circle */
+    text-align: center; /* Center the icon horizontally within the circle */
+  }
+  
+  .social-link i {
+    color: #000;
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+  .btn-secondary {
+    margin-left: 10px;
+  }
